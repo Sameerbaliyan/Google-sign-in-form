@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google-Sign-Form</title>
+    <link rel="stylesheet" href="google.css">
+    <script src="https://kit.fontawesome.com/1ac4d96e28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <img src="01.webp" alt="" class="webp">
+    <div class="container">
+        <img src="square_google_full_color_10x.png" alt="">
+        <h3>Create your Google Account</h3>
+        <input type="text" name="" id="" class="first" placeholder="First name">
+        <input type="text" name="" id="" class="last" placeholder="Last name">
+        <br>
+        <input type="text" name="email" id="" placeholder="Enter you'r email" class="email">
+        <p class="you" id="can">You can use letters numbers & periods</p>
+        <p class="use">Use my current email address instead</p>
+        <input type="password" name="password"  placeholder="Password" class="password">
+        <input type="password" name="password"  id="myInput" placeholder="Confirmed" class="passwor"><i class="far fa-eye" onclick="myFunction()"i></i>
+        <p class="more">Use 8 more chacractores with a mix of letters. numbers & <br> symbols</p>
+        <button class="next">Next</button>
+        <p class="sign">Sign in instead</p>
+    </div>
+</body>
+<script>
+    function myFunction(){
+      let x = document.getElementById("myInput")
+      if(x.type === "password"){
+        x.type = "text"
+      }else{
+        x.type = "password"
+      }
+    }
+
+    function color(){
+        const y = document.getElementById("can").style.color = "black"
+    }
+    color()
+
+</script>
+</html>
+
